@@ -4,7 +4,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use BrainGames\Cli\Cli;
+use  BrainGames\Cli\Cli;
 
 $cli = new Cli();
 $cli->run();
