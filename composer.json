@@ -3,7 +3,7 @@
     "description": "My first project for Hexlet",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src/"
+            "BrainGames\\Cli\\": "src/"
         }
     },
     "authors": [
@@ -14,5 +14,10 @@
     "bin": [
         "bin/brain-games"
     ],
-    "require": {}
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.13"
+    }
 }
