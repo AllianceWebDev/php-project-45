@@ -18,7 +18,7 @@ while (true) {
         $current = $firstNumber + $i * $step;
         if ($i === $missingIndex) {
             $answer = $current;
-            $current = '...';
+            $current = '..';
         }
         $progression[] = $current;
     }
