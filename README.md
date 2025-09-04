@@ -7,3 +7,6 @@
 
 ### Recording brain-calc
 [Запись](https://asciinema.org/a/LbPY4vfYR2wHPXfDGONsjwWt9)
+
+### Recording brain-gcd
+[Запись](https://asciinema.org/a/K7VPbjbvLvCnCZyd6rjwhPPEx)
