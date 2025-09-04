@@ -25,7 +25,7 @@ function game(array $details = []): void
         $score++;
     } else {
         line("%s is wrong answer ;(. Correct answer was %s.", $answer, $details['answer']);
-        line("Let's try again, %s", $name);
+        line("Let's try again, %s!", $name);
         exit();
     }
 
