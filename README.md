@@ -4,3 +4,6 @@
 ### Recording brain-even
 [Запись 1](https://asciinema.org/a/7NLUCWYaAccqJqzUc5sTsUuqX)
 [Запись 2](https://asciinema.org/a/LxT1EuUZiU34KP6YGrArN46rh)
+
+### Recording brain-calc
+[Запись](https://asciinema.org/a/LbPY4vfYR2wHPXfDGONsjwWt9)
