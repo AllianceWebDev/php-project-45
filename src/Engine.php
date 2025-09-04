@@ -1,44 +1,37 @@
 <?php
 
-namespace BrainGames\Cli;
+namespace Engine;
 
 use function cli\line;
 use function cli\prompt;
 
-class Engine
+function hello(string $message = ''): void
 {
-    public $name;
-    public $score = 0;
-    public $answer;
+    global $name;
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line('Hello, %s!', $name);
+    line($message);
+}
 
+function game(array $details = []): void
+{
+    global $name, $score;
+    $score = 0;
+    line("Question: {$details['question']}");
+    $answer = prompt('Your answer');
 
-    public function hello($message = '') {
-        line('Welcome to the Brain Games!');
-        $this->name = prompt('May I have your name?');
-        line('Hello, %s!', $this->name);
-        line($message);
+    if ($answer == $details['answer']) {
+        line('Correct!');
+        $score++;
+    } else {
+        line("%s is wrong answer ;(. Correct answer was %s.", $answer, $details['answer']);
+        line("Let's try again, %s", $name);
+        exit();
     }
 
-    public function game($details = []) {
-        line("Question: {$details['question']}");
-        $this->answer = prompt('Your answer');
-        
-        if($this->answer == $details['answer']) {
-            line('Correct!');
-            $this->score++;
-        } else {
-            line("%s is wrong answer ;(. Correct answer was %s.", $this->answer, $details['answer']);
-            line("Let's try again, %s", $this->name);
-            exit();
-        }
-        if($this->score == 3) {
-            line('Congratulations, %s!', $this->name);
-            exit();
-        }
-
-    }
-
-    public function getName() {
-        return $this->name;
+    if ($score == 3) {
+        line('Congratulations, %s!', $name);
+        exit();
     }
 }

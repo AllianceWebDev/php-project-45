@@ -1,23 +1,18 @@
 <?php
 
-
 require_once __DIR__ . '/../../vendor/autoload.php';
 
+use function Engine\hello;
+use function Engine\game;
 
+hello('What is the result of the expression?');
 
-use BrainGames\Cli\Engine;
-
-$engine = new Engine();
-$engine->hello('What is the result of the expression?');
-
-
-while(true) {
-
+while (true) {
     $rand = rand(0, 2);
     $number = rand(1, 100);
     $number2 = rand(1, 100);
-    
-    switch($rand) {
+
+    switch ($rand) {
         case 0:
             $symbol = '+';
             $answer = $number + $number2;
@@ -32,13 +27,10 @@ while(true) {
             break;
     }
 
-
     $question = "{$number} {$symbol} {$number2}";
 
-
-    $engine->game([
+    game([
         'question' => $question,
         'answer' => $answer,
-        
     ]);
 }
