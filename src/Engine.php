@@ -20,7 +20,9 @@ function game(array $details = []): void
     line("Question: {$details['question']}");
     $answer = prompt('Your answer');
 
-    if ($answer == $details['answer']) {
+    is_numeric($details['answer']) ? $answer = (int) $answer : $answer;
+
+    if ($answer === $details['answer']) {
         line('Correct!');
         $score++;
     } else {
@@ -29,7 +31,7 @@ function game(array $details = []): void
         exit();
     }
 
-    if ($score == 3) {
+    if ($score === 3) {
         line('Congratulations, %s!', $name);
         exit();
     }

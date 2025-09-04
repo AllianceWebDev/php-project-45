@@ -5,9 +5,13 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 use function Engine\hello;
 use function Engine\game;
 
+global $score;
+
+$score = 0;
+
 hello('What is the result of the expression?');
 
-while (true) {
+while ($score < 3) {
     $rand = rand(0, 2);
     $number = rand(1, 100);
     $number2 = rand(1, 100);
