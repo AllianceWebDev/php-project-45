@@ -17,7 +17,6 @@ function hello(string $message = ''): void
 function game(array $details = []): void
 {
     global $name, $score;
-    $score = 0;
     line("Question: {$details['question']}");
     $answer = prompt('Your answer');
 

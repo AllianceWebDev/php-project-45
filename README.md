@@ -8,7 +8,6 @@
 ### Установка
 ```bash
 # Копируем репозиторий
-
 git clone https://github.com/AllianceWebDev/php-project-45.git 
 
 # Устанавливаем зависимости
