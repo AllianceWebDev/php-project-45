@@ -10,3 +10,9 @@
 
 ### Recording brain-gcd
 [Запись](https://asciinema.org/a/K7VPbjbvLvCnCZyd6rjwhPPEx)
+
+### Recording brain-progression
+[Запись](https://asciinema.org/a/3wD1eIcc6TASvisJtkCB0D9uQ)
+
+### Recording brain-prime
+[Запись](https://asciinema.org/a/WTPb4gwLY8giJ9TIzoK0zaOam)
